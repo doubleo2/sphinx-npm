@@ -30,8 +30,6 @@ exports.main = function (srcdir) {
 				"-Dversion=" + version,
 				"-Drelease=" + release,
 				"-Dauthor="  + author,
-				"-Dmaster_doc=README",
-				"-bsinglehtml"
 			].concat(cmdArgs),
 			ps = spawn("sphinx-build", args);
 
